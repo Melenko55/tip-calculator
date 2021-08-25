@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #9FE8DF;
+    font-family: 'Space Mono', monospace;
+}
+
+input {
+    cursor: pointer;
+}
+
+.container h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #4F7476;
+    letter-spacing: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.wrapper {
+    display: flex;
+    background-color:#FFFFFF;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.left, .right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.bill {
+    margin-bottom: 40px;
+}
+
+.bill input {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 2vw;
+    padding: 4px 8px;
+    text-align: right;
+    border-radius: 5px;
+    border: none;
+    background-color: #F3F8FB;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.percentages {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+.percentages div.percent-block {
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #00474B;
+    text-align: center;
+    flex-basis: 25%;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 10px;
+    width: 25%;
+}
+
+.percentages input.percent-block {
+    color:#698481;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #F3F8FB;
+    text-align: center;
+    flex-basis: 25%;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 10px;
+    width: 25%;
+
+}
+
+input.percent-input {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: 2vw;
+    padding: 4px 8px;
+    text-align: right;
+    border-radius: 5px;
+    border: none;
+    background-color: #F3F8FB;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.peoples-block input {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 2vw;
+    padding: 4px 8px;
+    text-align: right;
+    border-radius: 5px;
+    border: none;
+    background-color: #F3F8FB;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.people-block-text, .bill-block-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.zero {
+    color:#E19884;
+}
+
+.success {
+    border-radius: 5px;
+    border: 3px solid #27C1AD !important;
+}
+
+.zero-input {
+    border-radius: 5px;
+    border: 3px solid #B88373 !important;
+    
+}
+
+.selected {
+    background-color: #27C1AD !important;
+    color: #086362 !important;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    background-color:#00474B;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.right .block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.block h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.block h4 {
+    color: #3A7479;
+    padding-top: 4px;
+    font-size: 12px;
+}
+
+.price {
+    color: #27C1AD;
+    padding-top: 4px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.btn-block {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-reset {
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 80%;
+    background-color: #27C1AD;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+        border-radius:20px
+    }
+
+    .percentages div.percent-block {
+        flex-basis: auto;
+        width: 35%;
+    }
+    .percentages input.percent-block {
+        flex-basis: auto;
+        width: 35%;
+    }
+
+    .peoples-block input, .bill {
+        margin-bottom: 5px;
+    }
+     
+    .right {
+        width: 75%;
+    }
+
+    .price {
+        font-size: 30px;
+    }
+
+    .block {
+        margin-top: 20px;
+    }
+
+    .mobile-block2 {
+        margin-bottom: 20px;
+    }
+
+    .container h1 {
+        margin-bottom: 20px;
+    }
+    
+}

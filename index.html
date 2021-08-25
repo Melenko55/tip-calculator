@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <h1>SPLI<br/>TTER</h1>  
+  <div class="wrapper">
+
+    <div class="left">
+
+      <div class="bill">
+        <div class="bill-block-text">
+          <h4>Bill</h4>
+          <h4 class="zero">Can't be zero</h4>
+        </div>
+        <input type="text" placeholder="0" id="bill-input">
+      </div>
+
+      <div class="select-tip">
+        <h4>Select Tip %</h4>
+
+        <div class="percentages">
+          <div class="percent-block">5%</div>
+          <div class="percent-block">10%</div>
+          <div class="percent-block selected">15%</div>
+          <div class="percent-block">25%</div>
+          <div class="percent-block">50%</div>
+          
+          <input type="text" placeholder="Custom" class="percent-block percent-input" id="percent-input">
+          
+        </div>
+        
+      </div>
+
+      <div class="peoples-block">
+        <div class="people-block-text">
+          <h4>Number of People</h4>
+          <h4 class="zero">Can't be zero</h4>
+        </div>
+        <input class="number-of-persons" type="text" placeholder="0" id="number-of-persons">
+      </div>
+
+    </div>
+
+
+    <div class="right">
+
+      <div class="block">
+        <div class="block-txt">
+          <h3>Tip Amount</h3>
+          <h4>/ person</h4>
+        </div>
+        <div class="price" id="tip-price">$0.00</div>
+      </div>
+
+      <div class="block mobile-block2">
+        <div class="block-txt">
+          <h3>Total</h3>
+          <h4>/ person</h4>
+        </div>
+        <div class="price" id="total-price">$0.00</div>
+      </div>
+  <div class="btn-block">
+    <button class="btn-reset">RESET</button>
+  </div>
+      
+    </div>
+  </div>
+</div>
+  
+  
+
+  <script src="./script.js"></script>
+</body>
+</html>
